@@ -17,15 +17,16 @@ def LogUpdate(log):
 
     # Print the date and time
     localtime = str(time.asctime( time.localtime(time.time())))
-    log.write('  - Date and time:')
+    log.write('  -')
     log.write(localtime)
     log.write('\n')
 
     # Print the username
     log.write('  - Username:')
     log.write(str(os.getlogin()))
+    log.write('\n')
     log.write('-----------------------------')
-    log.write('\n\n')
+    log.write('\n')
 
 def GetAvailableGlaciers(file):
     with open(file) as f:
@@ -55,7 +56,7 @@ def main():
             add_row(data_table, [glacier,'DN',3])
 
         log.write(str(len(glaciers_list)) + ' glaciers')
-        log.write('\n')
+        log.write('\n\n')
 
         # 1. List all files and subdirectories
         list_sub = glob.glob('*')
