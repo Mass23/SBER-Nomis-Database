@@ -12,6 +12,7 @@ def add_row(df, row):
 
 def LogUpdate(log):
     log.write('-----------------------------')
+    log.write('\n')
     log.write('Database update:')
     log.write('\n')
 
