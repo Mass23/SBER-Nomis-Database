@@ -17,7 +17,7 @@ def LogUpdate(log):
 
     # Print the date and time
     localtime = str(time.asctime( time.localtime(time.time())))
-    log.write('  -')
+    log.write('  - ')
     log.write(localtime)
     log.write('\n')
 
