@@ -54,7 +54,8 @@ def main():
             add_row(data_table, [glacier,'DN',2])
             add_row(data_table, [glacier,'DN',3])
 
-        print(data_table)
+        log.write(str(len(glaciers_list)) + ' glaciers')
+        log.write('\n')
 
         # 1. List all files and subdirectories
         list_sub = glob.glob('*')
