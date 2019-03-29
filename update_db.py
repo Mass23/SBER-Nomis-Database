@@ -25,7 +25,7 @@ def LogUpdate(log):
     log.write('  - Username:')
     log.write(str(os.getlogin()))
     log.write('-----------------------------')
-    log.write('\n')
+    log.write('\n\n')
 
 def GetAvailableGlaciers(file):
     with open(file) as f:
